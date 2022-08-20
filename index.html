@@ -1,86 +1,248 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/style.css">
-    <!-- CSS only -->    
-    <title>Portifólio</title>
-  </head>
-  <body>
 
-    <!-- CABEÇALHO DA PÁGINA -->
-    <header>
-        <p class="line typing-animation" id="home">Olá, Mundo! Eu sou Mariana</p>
-    </header> 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- CSS only -->
+  <title>Portifólio</title>
+</head>
 
-    <!-- CONTEÚDOS -->
-    <main>
-      <section>
-        <div class="test" id="perfil">
-          <div class="col-4">
-            <div class="box">
-              <img src="" alt="">
+<body>
+  <!-- <div class="projeto">
+    <img src="assets/img/avatar.png" alt="Avatar" class="imagem-projeto">
+    <div class="overlay">
+      <div class="text">Em breve</div>
+    </div>
+  </div> -->
+
+  <div class="home" id="home"></div>
+  <!-- CABEÇALHO DA PÁGINA -->
+  <header>
+    <p class="line typing-animation">Olá, Mundo! Eu sou Mariana</p>
+  </header>
+
+  <!-- CONTEÚDOS -->
+  <main>
+    <section id="perfil">
+      <div class="perfil">
+        <div class="grid">
+
+          <div class="col-12">
+            <h1 class="titulo">PERFIL</h1>
+            <hr>
+          </div>
+
+          <div class="col-4  al-center">
+            <div class="polaroid ">
+              <img src="assets/img/avatar.png" alt="5 Terre" style="width:100%">
+              <div class="container">
+                <p><a href="https://github.com/MarianaAlves01/Futsmash-TCC_ETEC.git" target="_blank"
+                    class="botao">Ver</a></p>
+              </div>
             </div>
           </div>
-          <div class="col-8">
 
+          <div class="col-4">
+            <div class="polaroid">
+              <img src="assets/img/avatar.png" alt="5 Terre" style="width:100%">
+              <div class="container">
+                <p><a href="https://github.com/MarianaAlves01/NEAT-testeFlappyBird" target="_blank"
+                    class="botao">Ver</a></p>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
-     
-    </main>
 
-    <!-- BARRA DE NAVEGAÇÃO -->
-    <div class="navbar">
-      <ul>
-
-        <li class="lista ativo">
-          <a onclick="topFunction()">
-            <span class="icone" ><ion-icon name="home-outline"></ion-icon></span>
-            <span class="texto">Home</span>
-          </a>
-        </li>
-
-        <li class="lista">
-          <a href="#perfil">
-            <span class="icone"><ion-icon name="person-outline"></ion-icon></span>
-            <span class="texto">Perfil</span>
-          </a>
-        </li>
-
-        <li class="lista">
-          <a href="#projetos">
-            <span class="icone"><ion-icon name="code-slash-outline"></ion-icon></span>
-            <span class="texto">Projetos</span>
-          </a>
-        </li>
-
-        <li class="lista">
-          <a href="#contatos">
-            <span class="icone"><ion-icon name="mail-outline"></ion-icon></span>
-            <span class="texto">Contatos</span>
-          </a>
-        </li>
-
-        <div class="indicador">
+          <div class="col-4 ">
+            <div class="polaroid">
+              <div class="projeto">
+                <img src="assets/img/avatar.png" alt="Avatar" class="imagem-projeto">
+                <div class="overlay">
+                  <div class="text">Em breve</div>
+                </div>
+                <div class="container">
+                  <p><a href="#" target="_blank" class="botao">Ver</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
 
         </div>
-      </ul>
-    </div>
+      </div>
+    </section>
+
+    <section id="projetos">
+      <div class="projetos" style="margin-top:3rem;">
+        <div class="grid">
+
+          <div class="col-12">
+            <h1 class="titulo">Projetos</h1>
+            <hr>
+          </div>
+
+          <div class="col-4  al-center">
+            <div class="polaroid ">
+              <img src="assets/img/avatar.png" alt="5 Terre" style="width:100%">
+              <div class="container">
+                <p><a href="https://github.com/MarianaAlves01/Futsmash-TCC_ETEC.git" target="_blank"
+                    class="botao">Ver</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="polaroid">
+              <img src="assets/img/avatar.png" alt="5 Terre" style="width:100%">
+              <div class="container">
+                <p><a href="https://github.com/MarianaAlves01/NEAT-testeFlappyBird" target="_blank"
+                    class="botao">Ver</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4 ">
+            <div class="polaroid">
+              <div class="projeto">
+                <img src="assets/img/avatar.png" alt="Avatar" class="imagem-projeto">
+                <div class="overlay">
+                  <div class="text">Em breve</div>
+                </div>
+                <div class="container">
+                  <p><a href="#" target="_blank" class="botao">Ver</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contatos">
+      <div class="contatos">
+        <div class="grid">
+
+          <div class="col-12">
+            <h1 class="titulo">Contatos</h1>
+            <hr>
+          </div>
+
+          <div class="col-2">
+            <a href="#">
+              <span class="icone-contato">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </span>
+            </a>
+          </div>
+
+          <div class="col-2">
+            <a href="https://api.whatsapp.com/send?phone=982827262&text=E%20a%C3%AD?">
+              <span class="icone-contato">
+                <ion-icon name="call-outline"></ion-icon>
+              </span>
+            </a>
+          </div>
+
+          <div class="col-2">
+            <a href="https://github.com/MarianaAlves01">
+              <span class="icone-contato">
+                <ion-icon name="logo-github"></ion-icon>
+              </span>
+            </a>
+          </div>
+
+          <div class="col-2">
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvkXPwzmlRCwBrqWKCFNLklvrjVJBWvCmPTRtMxqZSzrZtkRFmkqMDQXzQXbhddvVZcbkg">
+              <span class="icone-contato">
+                <ion-icon name="mail-outline"></ion-icon>
+              </span>
+            </a>
+          </div>
+
+          <div class="col-2">
+            <a href="https://www.instagram.com/amathiazita/">
+              <span class="icone-contato">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </span>
+            </a>
+          </div>
+
+          <div class="col-2">
+            <a href="https://discordapp.com/users/653709276526673930">
+              <span class="icone-contato">
+                <ion-icon name="logo-discord"></ion-icon>
+              </span>
+            </a>
+          </div>
 
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><ion-icon name="arrow-up-circle-outline"></ion-icon></button>
 
-    <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <script src="assets/script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  </body>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- BARRA DE NAVEGAÇÃO -->
+  <div class="navbar">
+    <ul>
+
+      <li class="lista ativo">
+        <a href="#home">
+          <span class="icone">
+            <ion-icon name="home-outline"></ion-icon>
+          </span>
+          <span class="texto">Home</span>
+        </a>
+      </li>
+
+      <li class="lista">
+        <a href="#perfil">
+          <span class="icone">
+            <ion-icon name="person-outline"></ion-icon>
+          </span>
+          <span class="texto">Perfil</span>
+        </a>
+      </li>
+
+      <li class="lista">
+        <a href="#projetos">
+          <span class="icone">
+            <ion-icon name="code-slash-outline"></ion-icon>
+          </span>
+          <span class="texto">Projetos</span>
+        </a>
+      </li>
+
+      <li class="lista">
+        <a href="#contatos">
+          <span class="icone">
+            <ion-icon name="mail-outline"></ion-icon>
+          </span>
+          <span class="texto">Contatos</span>
+        </a>
+      </li>
+
+      <div class="indicador">
+
+      </div>
+    </ul>
+  </div>
+
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <ion-icon name="arrow-up-circle-outline"></ion-icon>
+  </button>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>
