@@ -1,24 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
   }
 
   body {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    justify-content: center; */
+    /* height: 100vh; */
     background: rgba(25, 25, 25);
   }
 
+
+  /* NAVBAR */
+  .navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+  }
+
+  .navbar ul  {
+    display: flex;
+    width: 280px;
+  }
+
+  .navbar ul li {
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+    /* border: 1px solid red; */
+  }
+
+  .navbar ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .navbar ul li a .icone {
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: #000;
+  }
+
+  .navbar ul li.ativo a .icone {
+    transform: translateY(-35px);
+  }
+
+  .navbar ul li a .texto {
+    position: absolute;
+    color: #000;
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: .5s;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .navbar ul li.ativo a .texto {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+
+  .icone
+  {
+    cursor: pointer;
+  }
+
+  .indicador {
+    position: absolute;
+    top: -50%;
+    width: 70px;
+    height: 70px;
+    background: #29fd29;
+    border-radius: 50%;
+    border: 1px solid #23d823;
+    transition: .5s;
+  }
+
+  .indicador::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    /* box-shadow: 0 -10px 0 0 rgba(25, 25, 25); */
+  }
+
+  .indicador::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-left-radius: 20px;
+    /* box-shadow: 0 -10px 0 0 rgba(25, 25, 25); */
+  }
+
+  .navbar ul li:nth-child(1).ativo ~ .indicador {
+    transform: translateX(calc(70px * 0));
+  }
+  .navbar ul li:nth-child(2).ativo ~ .indicador {
+    transform: translateX(calc(70px * 1));
+  }
+  .navbar ul li:nth-child(3).ativo ~ .indicador {
+    transform: translateX(calc(70px * 2));
+  }
+  .navbar ul li:nth-child(4).ativo ~ .indicador {
+    transform: translateX(calc(70px * 3));
+  }
+
+
+  /* CABEÇALHO */
+  .digito
+  {
+    /* position: absolute; */
+    width: 100%;
+    height: 50rem;
+  }
+
+  /* TEXTO DIGITANDO */
   .line {
     border-right: 2px solid rgba(255, 255, 255, 0.75);
     color: rgba(255, 255, 255, 0.75);
     font-family: "Special Elite", monospace;
     font-size: 3em;
     text-align: center;
-    margin: 0 auto;
+    margin: 6em auto;
     white-space: nowrap;
     overflow: hidden;
   }
@@ -44,4 +182,40 @@
     to {
       border-right-color: transparent;
     }
+  }
+
+
+  /* BOTÃO DE SCROLL UP */
+
+  #myBtn {
+    display: none; /* Hidden by default */
+    width: 50px;
+    height: 50px;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 100px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 80; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #29fd29; /* Set a background color */
+    color: rgba(25, 25, 25); /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+
+
+  .test
+  {
+    height: 20rem;
+    padding: 2rem;
+    margin-bottom: 30rem;
+    background-color: rgb(199, 199, 199);
+    border-radius: .5rem;
   }

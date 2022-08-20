@@ -9,10 +9,78 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/style.css">
-    
+    <!-- CSS only -->    
     <title>Portifólio</title>
   </head>
   <body>
-    <p class="line typing-animation">Olá, Mundo! Eu sou Mariana</p>
+
+    <!-- CABEÇALHO DA PÁGINA -->
+    <header>
+        <p class="line typing-animation" id="home">Olá, Mundo! Eu sou Mariana</p>
+    </header> 
+
+    <!-- CONTEÚDOS -->
+    <main>
+      <section>
+        <div class="test" id="perfil">
+          <div class="col-4">
+            <div class="box">
+              <img src="" alt="">
+            </div>
+          </div>
+          <div class="col-8">
+
+          </div>
+        </div>
+      </section>
+     
+    </main>
+
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <div class="navbar">
+      <ul>
+
+        <li class="lista ativo">
+          <a onclick="topFunction()">
+            <span class="icone" ><ion-icon name="home-outline"></ion-icon></span>
+            <span class="texto">Home</span>
+          </a>
+        </li>
+
+        <li class="lista">
+          <a href="#perfil">
+            <span class="icone"><ion-icon name="person-outline"></ion-icon></span>
+            <span class="texto">Perfil</span>
+          </a>
+        </li>
+
+        <li class="lista">
+          <a href="#projetos">
+            <span class="icone"><ion-icon name="code-slash-outline"></ion-icon></span>
+            <span class="texto">Projetos</span>
+          </a>
+        </li>
+
+        <li class="lista">
+          <a href="#contatos">
+            <span class="icone"><ion-icon name="mail-outline"></ion-icon></span>
+            <span class="texto">Contatos</span>
+          </a>
+        </li>
+
+        <div class="indicador">
+
+        </div>
+      </ul>
+    </div>
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><ion-icon name="arrow-up-circle-outline"></ion-icon></button>
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
