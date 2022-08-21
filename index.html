@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- CSS only -->
   <title>Portifólio</title>
+  <script src="https://unpkg.com/scrollreveal@4"></script>
+	
 </head>
 
 <body>
@@ -31,42 +33,65 @@
         <div class="grid">
 
           <div class="col-12">
-            <h1 class="titulo">PERFIL</h1>
+            <h1 class="titulo">Sobre mim</h1>
             <hr>
           </div>
 
           <div class="col-4  al-center">
-            <div class="polaroid ">
+            <div class="polaroid " style="border-radius: 50%;">
               <img src="assets/img/avatar.png" alt="5 Terre" style="width:100%">
-              <div class="container">
-                <p><a href="https://github.com/MarianaAlves01/Futsmash-TCC_ETEC.git" target="_blank"
-                    class="botao">Ver</a></p>
-              </div>
             </div>
           </div>
 
-          <div class="col-4">
-            <div class="polaroid">
-              <img src="assets/img/avatar.png" alt="5 Terre" style="width:100%">
-              <div class="container">
-                <p><a href="https://github.com/MarianaAlves01/NEAT-testeFlappyBird" target="_blank"
-                    class="botao">Ver</a></p>
-              </div>
-            </div>
-          </div>
+          <div class="col-8">
 
-          <div class="col-4 ">
-            <div class="polaroid">
-              <div class="projeto">
-                <img src="assets/img/avatar.png" alt="Avatar" class="imagem-projeto">
-                <div class="overlay">
-                  <div class="text">Em breve</div>
+            <!-- TITULO -->
+            <div class="col-12">
+              <h2 class="subtitulo">Passe o mouse para ver mais</h2>
+            </div>
+            <!-- ICONES -->
+            <div class="col-12 " style="display: flex;">
+              <div class="grid">
+                <div class="col-3" id="formacao" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()">
+                  <a href="#">
+                    <span class="icone-perfil">
+                      <ion-icon name="school-outline"></ion-icon>
+                    </span>
+                  </a>
                 </div>
-                <div class="container">
-                  <p><a href="#" target="_blank" class="botao">Ver</a></p>
+      
+                <div class="col-3" id="tech" onmouseenter="mouseEnter2()" onmouseleave="mouseLeave()">
+                  <a href="#">
+                    <span class="icone-perfil">
+                      <ion-icon name="terminal-outline"></ion-icon>
+                    </span>
+                  </a>
                 </div>
+      
+                <div class="col-3" id="certificados" onmouseenter="mouseEnter3()" onmouseleave="mouseLeave()">
+                  <a href="#">
+                    <span class="icone-perfil">
+                      <ion-icon name="ribbon-outline"></ion-icon>
+                    </span>
+                  </a>
+                </div>
+
+                <div class="col-3" id="trabalhos" onmouseenter="mouseEnter4()" onmouseleave="mouseLeave()">
+                  <a href="#">
+                    <span class="icone-perfil">
+                      <ion-icon name="briefcase-outline"></ion-icon>
+                    </span>
+                  </a>
+                </div>
+                
               </div>
             </div>
+
+            <!-- ESCRITA -->
+            <div class="col-12 ">
+              <p id="demo" ></p>
+            </div>
+
           </div>
 
         </div>
@@ -84,6 +109,8 @@
 
           <div class="col-4  al-center">
             <div class="polaroid ">
+              <h1 class="subtitulo black">Futsmash</h1>
+              <hr>
               <img src="assets/img/avatar.png" alt="5 Terre" style="width:100%">
               <div class="container">
                 <p><a href="https://github.com/MarianaAlves01/Futsmash-TCC_ETEC.git" target="_blank"
@@ -94,6 +121,8 @@
 
           <div class="col-4">
             <div class="polaroid">
+              <h1 class="subtitulo black">NEAT - FlappyBird</h1>
+              <hr>
               <img src="assets/img/avatar.png" alt="5 Terre" style="width:100%">
               <div class="container">
                 <p><a href="https://github.com/MarianaAlves01/NEAT-testeFlappyBird" target="_blank"
@@ -104,11 +133,14 @@
 
           <div class="col-4 ">
             <div class="polaroid">
+              <div class="overlay">
+                <div class="text">Em breve</div>
+              </div>
+              <h1 class="subtitulo"> em breve </h1>
+              <hr>
               <div class="projeto">
-                <img src="assets/img/avatar.png" alt="Avatar" class="imagem-projeto">
-                <div class="overlay">
-                  <div class="text">Em breve</div>
-                </div>
+                <img src="assets/img/avatar.png" alt="5 Terre" style="width:100%">
+                
                 <div class="container">
                   <p><a href="#" target="_blank" class="botao">Ver</a></p>
                 </div>
@@ -232,7 +264,7 @@
   </div>
 
 
-  <button onclick="topFunction()" id="myBtn" title="Go to top">
+  <button onclick="topFunction()" id="myBtn" title="Ir Para O Topo">
     <ion-icon name="arrow-up-circle-outline"></ion-icon>
   </button>
 
