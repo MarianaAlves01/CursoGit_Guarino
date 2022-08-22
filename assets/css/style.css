@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -193,43 +194,41 @@ body {
 }
 
 
-/* BOTÃO DE SCROLL UP */
+/*========== SCROLL UP ==========*/
 
-#myBtn {
-  display: none;
-  /* Hidden by default */
-  width: 50px;
-  height: 50px;
-  position: fixed;
-  /* Fixed/sticky position */
-  bottom: 100px;
-  /* Place the button at the bottom of the page */
-  right: 30px;
-  /* Place the button 30px from the right */
-  z-index: 80;
-  /* Make sure it does not overlap */
-  border: none;
-  /* Remove borders */
-  outline: none;
-  /* Remove outline */
-  background-color: #008CBA;
-  /* Set a background color */
-  color: rgba(25, 25, 25);
-  /* Text color */
-  cursor: pointer;
-  /* Add a mouse pointer on hover */
-  padding: 15px;
-  /* Some padding */
-  border-radius: 50%;
-  /* Rounded corners */
-  font-size: 18px;
-  /* Increase font size */
+.scrollup
+{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    color: #008CBA ;
+    opacity: .8;
+    padding: .5rem;
+    border-radius: .4rem;
+    z-index: 10;
+    transition: .4s;
 }
 
-#myBtn:hover {
-  background-color: #555;
-  /* Add a dark-grey background on hover */
+.scrollup:hover
+{
+    color:  #016e93;
 }
+
+.scrollup__icon
+{
+    font-size: 3rem;
+    /* color: #FFF; */
+}
+
+/* Show scroll */
+
+.show-scroll
+{
+    bottom: 5rem;
+}
+
+
+
 
 
 .icone-contato {
@@ -471,6 +470,15 @@ div.container {
 .black
 {
   color: #000;
+}
+
+#contatos
+{
+  margin: 5rem 0 20rem 0;
+}
+
+#projetos{
+  margin-bottom: 3rem;
 }
 
 @media only screen and (max-width: 768px) {
