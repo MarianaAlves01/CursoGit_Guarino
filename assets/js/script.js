@@ -29,7 +29,7 @@ function mouseEnter() {
   document.getElementById("demo").innerHTML = "Tecnólogo em Análise e Desenvolvimento de Sistemas - Fatec João Mod, 2022- <br>Técnico Em Desenvolvimento de Sistemas - Etec Alfredo de Barros Santos, 2019-2021"
 }
 function mouseEnter2() {
-  document.getElementById("demo").innerHTML = "<ion-icon class='icone-perfil' name='logo-javascript'></ion-icon> <ion-icon class='icone-perfil' name='logo-html5'></ion-icon> <ion-icon class='icone-perfil' name='logo-css3'></ion-icon> <ion-icon class='icone-perfil' name='logo-python'></ion-icon> <ion-icon class='icone-perfil' name='server'></ion-icon>"
+  document.getElementById("demo").innerHTML = "<i class='fab fa-js icone-perfil'></i> <i class='fab icone-perfil fa-html5'></i> <i class='fab icone-perfil fa-css3-alt'></i> <i class='fab icone-perfil fa-python'></i> <i class='icone-perfil fab fa-java'></i> <i class='fas icone-perfil fa-server'></i> "
 }
 function mouseEnter3() {
   document.getElementById("demo").innerHTML = "IT Essentials - Cisco, 2022"
